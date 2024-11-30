@@ -1,12 +1,43 @@
 
 body {
-    margin: 5% 20% 0 20%;
+  margin: 5% 20% 0 20%;
     font-size: 16px;
     font-family: 'Crimson Text', serif;
     font-weight: 400;
     line-height: 1.5;
-    background-color: rgb(234, 234, 234);
-  }
+    background: linear-gradient(-45deg, #1e3a8a, hsl(161, 90%, 49%) , #24c5ff, #1e75b8);
+    background-size: 1000% 1000%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.gradient-border {
+  position: relative;
+  padding: 20px;
+  margin: 50px;
+  font-size: 18px;
+  border: 10px solid transparent; 
+  border-radius: 10px;
+  background-color: rgb(239, 239, 239);
+    box-sizing: border-box;
+}
+.gradient-border {
+  border-image-slice: 1;
+  border-image-width: 10px;  /* Same as border thickness */
+}
+
 
   blockquote {
     margin: 0 5% 0 5%;
@@ -17,12 +48,12 @@ body {
     border-right: 0;
     border-top: 0;
     padding-left: 10px;
-    border-color: dodgerblue;
+    border-color:black;
+    color:black;
 
   }
 
-
-  /* image styles */
+  /* image */
   img {
     width: 300px;
     height: 300px;
@@ -34,7 +65,7 @@ body {
     height: 95%;
   }
   
-  /* type styles */
+  /* type */
   h1 {
     margin: 3rem 0 1rem;
     font-family: 'Quicksand', sans-serif;
@@ -45,11 +76,12 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: dodgerblue;
+    color:dodgerblue;
     font-family: Figtree;
   }
   p {
     font-size: 1.2rem;
     margin: 0 0 1rem;
     font-family: Arial, Helvetica, sans-serif;
+    color:black;
   }
