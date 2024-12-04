@@ -1,11 +1,20 @@
 
+.wrapper-main {
+  margin: 0 20vw;
+}
+.wrapper-gallery {
+  margin: 0 auto; 
+  width: 80%; 
+  max-width: 1200px; 
+}
+
 body {
   margin: 5% 20% 0 20%;
     font-size: 16px;
     font-family: 'Crimson Text', serif;
     font-weight: 400;
     line-height: 1.5;
-    background: linear-gradient(-45deg, #1e3a8a, hsl(161, 90%, 49%) , #24c5ff, #1e75b8);
+    background: linear-gradient(-45deg, #1651f5, hsl(161, 90%, 49%) , #24c5ff, #1e75b8);
     background-size: 1000% 1000%;
     animation: gradient 15s ease infinite;
     height: 100vh;
@@ -23,22 +32,6 @@ body {
 	}
 }
 
-.gradient-border {
-  position: relative;
-  padding: 20px;
-  margin: 50px;
-  font-size: 18px;
-  border: 10px solid transparent; 
-  border-radius: 10px;
-  background-color: rgb(239, 239, 239);
-    box-sizing: border-box;
-}
-.gradient-border {
-  border-image-slice: 1;
-  border-image-width: 10px;  /* Same as border thickness */
-}
-
-
   blockquote {
     margin: 0 5% 0 5%;
     font-family: 'Courier New', Courier, monospace;
@@ -52,18 +45,6 @@ body {
     color:black;
 
   }
-
-  /* image */
-  img {
-    width: 300px;
-    height: 300px;
-    object-fit:cover;
-    margin: 10px;
-  }
-  img:hover {
-    width: 95%;
-    height: 95%;
-  }
   
   /* type */
   h1 {
@@ -76,12 +57,26 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color:dodgerblue;
+    color: yel;
     font-family: Figtree;
+  }
+  h5 {
+    font-size: 1rem;
+    margin: 0 0 1rem;
+    font-family: Figtree;
+    color: black;
+    font-style:italic;
   }
   p {
     font-size: 1.2rem;
-    margin: 0 0 1rem;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 0 1.2rem;
+    font-family: Figtree;
     color:black;
   }
+
+  hr {
+    display: block;
+    border: none;
+    padding-top: 10%;
+  }
+ 
