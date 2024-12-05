@@ -38,6 +38,8 @@
 
 /* Hover Interaction */
 .gallery-img:hover {
+  border: solid 3px;
+  border-color: blueviolet;
   opacity: 0.8;
   transition: opacity 0.3s;
 }

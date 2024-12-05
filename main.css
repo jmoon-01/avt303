@@ -32,6 +32,46 @@ body {
 	}
 }
 
+.nav {
+  height: 150px;
+  right: 0;
+  margin: 25px;
+  margin-top:0%;
+  display: grid block;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 15px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  position: fixed;
+  text-align: right;
+  padding: 15px 30px;
+}
+
+.nav :link{
+  text-decoration: none;
+  color: black;
+  border: solid 2px;
+  border-width: 5px;
+  border-radius: 500px;
+  letter-spacing: 1px;
+}
+
+.nav :visited{
+  color:black;
+}
+
+.nav :hover{
+  border-color: black;
+  background-color: blueviolet;
+  border-radius: 500px;
+  background-size: 1px;
+  transition: border-color 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
   blockquote {
     margin: 0 5% 0 5%;
     font-family: 'Courier New', Courier, monospace;
@@ -43,7 +83,6 @@ body {
     padding-left: 10px;
     border-color:black;
     color:black;
-
   }
   
   /* type */
